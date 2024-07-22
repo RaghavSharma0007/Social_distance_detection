@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video upload</title>
+    <style>
+        #head1{
+  font-size:60px;
+  font-weight: bold;
+  /* border-bottom: 5px solid blue; */
+}
+#display_image1{
+            height: 90%;
+            width: 110%;
+        }
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 45%;
+  height: 100%;
+  /* padding: 5px; */
+}
+figcaption {
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+}
+#imagediv{
+    border: 0ch cornflowerblue;
+    border-style: double;
+    align-items: center;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row{
+    height: 12cm;
+}
+#mainbody a{
+      margin: 0 5px;
+ }
+    #demo { color: #FF0000; }
+    </style>
+
+<script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML =  "<h1>Please wait !! your video is being processed.</h1>";
+    }
+  </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+    <div id="upload_form">
+        <p><h1 align="center"><U><span style="color: rgb(236, 19, 19)">Test on video</span></U></h1></p>
+        <form method="post" action="/video_upload" enctype="multipart/form-data">
+            <dl>
+                <h2>Upload the video here </h2>
+                <p>
+                    <input type="file" name="file2" class="form-control" autocomplete="off" required>
+                </p>
+            </dl>
+            <p id="demo"></p>
+            <p>
+                <input type="submit" value="Submit" class="btn btn-info"onclick="myFunction()">
+            </p>
+
+            
+        </form>
+    </div>
+
+</div>
+</div>
+</body>
+</html>

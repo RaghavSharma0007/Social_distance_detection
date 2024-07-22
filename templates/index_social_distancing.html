@@ -1,0 +1,49 @@
+<!-- //templates/index.html -->
+<html>
+<head>
+    <style>
+.container {
+    font-size: large;
+  
+}
+#mainbody a{
+      margin: 0 5px;
+ }
+
+    </style>
+<title>Social Distancing Application</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML =  "Hello Dear Visitor!</br> Webcam will start in a new window. press <h1>Esc</h1> to exit !! once it is started";
+    }
+  </script> -->
+</head>
+<body>
+    <div class='container' align="center">
+        <h1><span style="color: rgb(236, 19, 19)">Social Distancing Application</span></h1>
+        <h3>Click the button below to test on image</h3>
+            <form action="/image_upl">
+                <button name="forwardBtn1" type="submit" >Click here to upload image</button>
+                <p id="demo"></p>
+            </form>
+            <h3>Click the button below to test on video</h3>
+            <form action="/video_upl" >
+                <button name="forwardBtn2" type="submit"  >Click here to upload video</button>
+                <p id="demo"></p>
+            </form>
+            <!--<h3>Click the button below to open the Webcam</h3>-->
+            <!--<form action="/webcam">-->
+            <!--    <button name="forwardBtn3" type="submit" >Click here to open Webcam</button>-->
+            <!--    <p id="demo"></p>-->
+            <!--</form>-->
+            <!-- <h3>Click the button below to open the Webcam</h3>
+            <form action="/video_feed" method="POST">
+                <button name="forwardBtn3" type="submit" onclick="myFunction()" >Click here to open Webcam</button>
+                <p id="demo"></p>
+            </form> -->
+    </div>
+</body>
+</html>
